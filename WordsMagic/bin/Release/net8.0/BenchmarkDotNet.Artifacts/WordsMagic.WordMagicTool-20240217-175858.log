@@ -1,0 +1,143 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 1 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/gogitakupatadze/RiderProjects/WordsMagic/WordsMagic/bin/Release/net8.0/d38d2656-b28b-4ec6-a4fe-c1884e2a7564
+// command took 0.74 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/gogitakupatadze/RiderProjects/WordsMagic/WordsMagic/bin/Release/net8.0/d38d2656-b28b-4ec6-a4fe-c1884e2a7564
+// command took 1.6 sec and exited with 0
+// ***** Done, took 00:00:02 (2.37 sec)   *****
+// Found 1 benchmarks:
+//   WordMagicTool.Calculate: DefaultJob [ProvidedData=brpgejkke]
+
+// **************************
+// Benchmark: WordMagicTool.Calculate: DefaultJob [ProvidedData=brpgejkke]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet d38d2656-b28b-4ec6-a4fe-c1884e2a7564.dll --anonymousPipes 106 107 --benchmarkName "WordsMagic.WordMagicTool.Calculate(ProvidedData: \"brpgejkke\")" --job Default --benchmarkId 0 in /Users/gogitakupatadze/RiderProjects/WordsMagic/WordsMagic/bin/Release/net8.0/d38d2656-b28b-4ec6-a4fe-c1884e2a7564/bin/Release/net8.0
+// Failed to set up high priority (Permission denied). In order to run benchmarks with high priority, make sure you have the right permissions.
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,AES,CRC32,DP,RDM,SHA1,SHA256 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 116834.00 ns, 116.8340 us/op
+WorkloadJitting  1: 1 op, 1057375083.00 ns, 1.0574 s/op
+
+OverheadJitting  2: 1 op, 167.00 ns, 167.0000 ns/op
+WorkloadJitting  2: 1 op, 923141083.00 ns, 923.1411 ms/op
+
+WorkloadWarmup   1: 1 op, 923485250.00 ns, 923.4852 ms/op
+WorkloadWarmup   2: 1 op, 922008208.00 ns, 922.0082 ms/op
+WorkloadWarmup   3: 1 op, 923267125.00 ns, 923.2671 ms/op
+WorkloadWarmup   4: 1 op, 924534000.00 ns, 924.5340 ms/op
+WorkloadWarmup   5: 1 op, 923133375.00 ns, 923.1334 ms/op
+WorkloadWarmup   6: 1 op, 922954042.00 ns, 922.9540 ms/op
+WorkloadWarmup   7: 1 op, 923320333.00 ns, 923.3203 ms/op
+WorkloadWarmup   8: 1 op, 923864667.00 ns, 923.8647 ms/op
+WorkloadWarmup   9: 1 op, 924597292.00 ns, 924.5973 ms/op
+WorkloadWarmup  10: 1 op, 924479584.00 ns, 924.4796 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 926215417.00 ns, 926.2154 ms/op
+WorkloadActual   2: 1 op, 931044083.00 ns, 931.0441 ms/op
+WorkloadActual   3: 1 op, 923930042.00 ns, 923.9300 ms/op
+WorkloadActual   4: 1 op, 923614625.00 ns, 923.6146 ms/op
+WorkloadActual   5: 1 op, 925650583.00 ns, 925.6506 ms/op
+WorkloadActual   6: 1 op, 923053584.00 ns, 923.0536 ms/op
+WorkloadActual   7: 1 op, 923586083.00 ns, 923.5861 ms/op
+WorkloadActual   8: 1 op, 921867833.00 ns, 921.8678 ms/op
+WorkloadActual   9: 1 op, 928432458.00 ns, 928.4325 ms/op
+WorkloadActual  10: 1 op, 929689792.00 ns, 929.6898 ms/op
+WorkloadActual  11: 1 op, 924781250.00 ns, 924.7812 ms/op
+WorkloadActual  12: 1 op, 925291000.00 ns, 925.2910 ms/op
+WorkloadActual  13: 1 op, 924041916.00 ns, 924.0419 ms/op
+WorkloadActual  14: 1 op, 926911250.00 ns, 926.9112 ms/op
+WorkloadActual  15: 1 op, 923480625.00 ns, 923.4806 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 926215417.00 ns, 926.2154 ms/op
+WorkloadResult   2: 1 op, 923930042.00 ns, 923.9300 ms/op
+WorkloadResult   3: 1 op, 923614625.00 ns, 923.6146 ms/op
+WorkloadResult   4: 1 op, 925650583.00 ns, 925.6506 ms/op
+WorkloadResult   5: 1 op, 923053584.00 ns, 923.0536 ms/op
+WorkloadResult   6: 1 op, 923586083.00 ns, 923.5861 ms/op
+WorkloadResult   7: 1 op, 921867833.00 ns, 921.8678 ms/op
+WorkloadResult   8: 1 op, 928432458.00 ns, 928.4325 ms/op
+WorkloadResult   9: 1 op, 929689792.00 ns, 929.6898 ms/op
+WorkloadResult  10: 1 op, 924781250.00 ns, 924.7812 ms/op
+WorkloadResult  11: 1 op, 925291000.00 ns, 925.2910 ms/op
+WorkloadResult  12: 1 op, 924041916.00 ns, 924.0419 ms/op
+WorkloadResult  13: 1 op, 926911250.00 ns, 926.9112 ms/op
+WorkloadResult  14: 1 op, 923480625.00 ns, 923.4806 ms/op
+// GC:  1 0 0 9244112 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 18668 has exited with code 0.
+
+Mean = 925.039 ms, StdErr = 0.580 ms (0.06%), N = 14, StdDev = 2.172 ms
+Min = 921.868 ms, Q1 = 923.593 ms, Median = 924.412 ms, Q3 = 926.074 ms, Max = 929.690 ms
+IQR = 2.481 ms, LowerFence = 919.872 ms, UpperFence = 929.796 ms
+ConfidenceInterval = [922.589 ms; 927.489 ms] (CI 99.9%), Margin = 2.450 ms (0.26% of Mean)
+Skewness = 0.67, Kurtosis = 2.4, MValue = 2
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2024-02-17 17:59 (0h 0m from now) **
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts/results/WordsMagic.WordMagicTool-report.csv
+  BenchmarkDotNet.Artifacts/results/WordsMagic.WordMagicTool-report-github.md
+  BenchmarkDotNet.Artifacts/results/WordsMagic.WordMagicTool-report.html
+
+// * Detailed results *
+WordMagicTool.Calculate: DefaultJob [ProvidedData=brpgejkke]
+Runtime = .NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 925.039 ms, StdErr = 0.580 ms (0.06%), N = 14, StdDev = 2.172 ms
+Min = 921.868 ms, Q1 = 923.593 ms, Median = 924.412 ms, Q3 = 926.074 ms, Max = 929.690 ms
+IQR = 2.481 ms, LowerFence = 919.872 ms, UpperFence = 929.796 ms
+ConfidenceInterval = [922.589 ms; 927.489 ms] (CI 99.9%), Margin = 2.450 ms (0.26% of Mean)
+Skewness = 0.67, Kurtosis = 2.4, MValue = 2
+-------------------- Histogram --------------------
+[920.685 ms ; 930.873 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet v0.13.12, macOS Sonoma 14.4 (23E5196e) [Darwin 23.4.0]
+Apple M1, 1 CPU, 8 logical and 8 physical cores
+.NET SDK 8.0.101
+  [Host]     : .NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT AdvSIMD
+  DefaultJob : .NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT AdvSIMD
+
+
+| Method    | ProvidedData | Mean     | Error   | StdDev  | Gen0      | Allocated |
+|---------- |------------- |---------:|--------:|--------:|----------:|----------:|
+| Calculate | brpgejkke    | 925.0 ms | 2.45 ms | 2.17 ms | 1000.0000 |   8.82 MB |
+
+// * Hints *
+Outliers
+  WordMagicTool.Calculate: Default -> 1 outlier  was  removed (931.04 ms)
+
+// * Legends *
+  ProvidedData : Value of the 'ProvidedData' parameter
+  Mean         : Arithmetic mean of all measurements
+  Error        : Half of 99.9% confidence interval
+  StdDev       : Standard deviation of all measurements
+  Gen0         : GC Generation 0 collects per 1000 operations
+  Allocated    : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms         : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:26 (26.21 sec), executed benchmarks: 1
+
+Global total time: 00:00:28 (28.84 sec), executed benchmarks: 1
+// * Artifacts cleanup *
+Artifacts cleanup is finished

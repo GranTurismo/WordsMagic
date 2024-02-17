@@ -1,0 +1,53 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 1 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/gogitakupatadze/RiderProjects/WordsMagic/WordsMagic/bin/Release/net8.0/a3e9a54e-0b41-4e32-af2c-930270e5872f
+// command took 0.67 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/gogitakupatadze/RiderProjects/WordsMagic/WordsMagic/bin/Release/net8.0/a3e9a54e-0b41-4e32-af2c-930270e5872f
+// command took 1.68 sec and exited with 0
+// ***** Done, took 00:00:02 (2.39 sec)   *****
+// Found 1 benchmarks:
+//   WordMagicTool.Calculate: DefaultJob [ProvidedData=brpgejkke]
+
+// **************************
+// Benchmark: WordMagicTool.Calculate: DefaultJob [ProvidedData=brpgejkke]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet a3e9a54e-0b41-4e32-af2c-930270e5872f.dll --anonymousPipes 106 107 --benchmarkName "WordsMagic.WordMagicTool.Calculate(ProvidedData: \"brpgejkke\")" --job Default --benchmarkId 0 in /Users/gogitakupatadze/RiderProjects/WordsMagic/WordsMagic/bin/Release/net8.0/a3e9a54e-0b41-4e32-af2c-930270e5872f/bin/Release/net8.0
+// Failed to set up high priority (Permission denied). In order to run benchmarks with high priority, make sure you have the right permissions.
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,AES,CRC32,DP,RDM,SHA1,SHA256 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 130500.00 ns, 130.5000 us/op
+70
+WorkloadJitting  1: 1 op, 1076559542.00 ns, 1.0766 s/op
+
+OverheadJitting  2: 1 op, 41.00 ns, 41.0000 ns/op
+70
+WorkloadJitting  2: 1 op, 947392333.00 ns, 947.3923 ms/op
+
+70
+WorkloadWarmup   1: 1 op, 951002250.00 ns, 951.0023 ms/op
+70
+WorkloadWarmup   2: 1 op, 948592583.00 ns, 948.5926 ms/op
+70
+WorkloadWarmup   3: 1 op, 950191333.00 ns, 950.1913 ms/op
+70
+WorkloadWarmup   4: 1 op, 949266458.00 ns, 949.2665 ms/op
+70
+WorkloadWarmup   5: 1 op, 950738042.00 ns, 950.7380 ms/op
+70
+WorkloadWarmup   6: 1 op, 959892750.00 ns, 959.8927 ms/op
+70
+WorkloadWarmup   7: 1 op, 955485958.00 ns, 955.4860 ms/op
+
+// BeforeActualRun
+70
+WorkloadActual   1: 1 op, 956083917.00 ns, 956.0839 ms/op

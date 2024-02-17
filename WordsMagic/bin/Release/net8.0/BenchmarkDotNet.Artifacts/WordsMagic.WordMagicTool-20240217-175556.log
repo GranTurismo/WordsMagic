@@ -1,0 +1,262 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 1 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/gogitakupatadze/RiderProjects/WordsMagic/WordsMagic/bin/Release/net8.0/a0639a52-2002-4dac-864b-37d87dc1fb0a
+// command took 0.88 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/gogitakupatadze/RiderProjects/WordsMagic/WordsMagic/bin/Release/net8.0/a0639a52-2002-4dac-864b-37d87dc1fb0a
+// command took 1.69 sec and exited with 0
+// ***** Done, took 00:00:02 (2.61 sec)   *****
+// Found 1 benchmarks:
+//   WordMagicTool.Calculate: DefaultJob [ProvidedData=brpgejkke]
+
+// **************************
+// Benchmark: WordMagicTool.Calculate: DefaultJob [ProvidedData=brpgejkke]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet a0639a52-2002-4dac-864b-37d87dc1fb0a.dll --anonymousPipes 106 107 --benchmarkName "WordsMagic.WordMagicTool.Calculate(ProvidedData: \"brpgejkke\")" --job Default --benchmarkId 0 in /Users/gogitakupatadze/RiderProjects/WordsMagic/WordsMagic/bin/Release/net8.0/a0639a52-2002-4dac-864b-37d87dc1fb0a/bin/Release/net8.0
+// Failed to set up high priority (Permission denied). In order to run benchmarks with high priority, make sure you have the right permissions.
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,AES,CRC32,DP,RDM,SHA1,SHA256 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 118375.00 ns, 118.3750 us/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadJitting  1: 1 op, 1072395583.00 ns, 1.0724 s/op
+
+OverheadJitting  2: 1 op, 125.00 ns, 125.0000 ns/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadJitting  2: 1 op, 956519208.00 ns, 956.5192 ms/op
+
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadWarmup   1: 1 op, 955081208.00 ns, 955.0812 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadWarmup   2: 1 op, 955785167.00 ns, 955.7852 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadWarmup   3: 1 op, 957681583.00 ns, 957.6816 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadWarmup   4: 1 op, 958850666.00 ns, 958.8507 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadWarmup   5: 1 op, 957585167.00 ns, 957.5852 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadWarmup   6: 1 op, 959537625.00 ns, 959.5376 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadWarmup   7: 1 op, 958869708.00 ns, 958.8697 ms/op
+
+// BeforeActualRun
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual   1: 1 op, 956965875.00 ns, 956.9659 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual   2: 1 op, 958214959.00 ns, 958.2150 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual   3: 1 op, 957780000.00 ns, 957.7800 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual   4: 1 op, 957814500.00 ns, 957.8145 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual   5: 1 op, 958900958.00 ns, 958.9010 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual   6: 1 op, 959136000.00 ns, 959.1360 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual   7: 1 op, 959280416.00 ns, 959.2804 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual   8: 1 op, 959033083.00 ns, 959.0331 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual   9: 1 op, 957312958.00 ns, 957.3130 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual  10: 1 op, 959449583.00 ns, 959.4496 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual  11: 1 op, 958178791.00 ns, 958.1788 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual  12: 1 op, 958329084.00 ns, 958.3291 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual  13: 1 op, 959279083.00 ns, 959.2791 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual  14: 1 op, 960331625.00 ns, 960.3316 ms/op
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadActual  15: 1 op, 958352417.00 ns, 958.3524 ms/op
+
+// AfterActualRun
+b r p 
+g e j 
+k k e 
+------------------------------
+70
+WorkloadResult   1: 1 op, 956965875.00 ns, 956.9659 ms/op
+WorkloadResult   2: 1 op, 958214959.00 ns, 958.2150 ms/op
+WorkloadResult   3: 1 op, 957780000.00 ns, 957.7800 ms/op
+WorkloadResult   4: 1 op, 957814500.00 ns, 957.8145 ms/op
+WorkloadResult   5: 1 op, 958900958.00 ns, 958.9010 ms/op
+WorkloadResult   6: 1 op, 959136000.00 ns, 959.1360 ms/op
+WorkloadResult   7: 1 op, 959280416.00 ns, 959.2804 ms/op
+WorkloadResult   8: 1 op, 959033083.00 ns, 959.0331 ms/op
+WorkloadResult   9: 1 op, 957312958.00 ns, 957.3130 ms/op
+WorkloadResult  10: 1 op, 959449583.00 ns, 959.4496 ms/op
+WorkloadResult  11: 1 op, 958178791.00 ns, 958.1788 ms/op
+WorkloadResult  12: 1 op, 958329084.00 ns, 958.3291 ms/op
+WorkloadResult  13: 1 op, 959279083.00 ns, 959.2791 ms/op
+WorkloadResult  14: 1 op, 960331625.00 ns, 960.3316 ms/op
+WorkloadResult  15: 1 op, 958352417.00 ns, 958.3524 ms/op
+// GC:  1 0 0 10582616 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 18586 has exited with code 0.
+
+Mean = 958.557 ms, StdErr = 0.232 ms (0.02%), N = 15, StdDev = 0.897 ms
+Min = 956.966 ms, Q1 = 957.997 ms, Median = 958.352 ms, Q3 = 959.208 ms, Max = 960.332 ms
+IQR = 1.211 ms, LowerFence = 956.180 ms, UpperFence = 961.024 ms
+ConfidenceInterval = [957.599 ms; 959.516 ms] (CI 99.9%), Margin = 0.959 ms (0.10% of Mean)
+Skewness = 0.04, Kurtosis = 2.14, MValue = 2
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2024-02-17 17:56 (0h 0m from now) **
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts/results/WordsMagic.WordMagicTool-report.csv
+  BenchmarkDotNet.Artifacts/results/WordsMagic.WordMagicTool-report-github.md
+  BenchmarkDotNet.Artifacts/results/WordsMagic.WordMagicTool-report.html
+
+// * Detailed results *
+WordMagicTool.Calculate: DefaultJob [ProvidedData=brpgejkke]
+Runtime = .NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 958.557 ms, StdErr = 0.232 ms (0.02%), N = 15, StdDev = 0.897 ms
+Min = 956.966 ms, Q1 = 957.997 ms, Median = 958.352 ms, Q3 = 959.208 ms, Max = 960.332 ms
+IQR = 1.211 ms, LowerFence = 956.180 ms, UpperFence = 961.024 ms
+ConfidenceInterval = [957.599 ms; 959.516 ms] (CI 99.9%), Margin = 0.959 ms (0.10% of Mean)
+Skewness = 0.04, Kurtosis = 2.14, MValue = 2
+-------------------- Histogram --------------------
+[956.489 ms ; 960.809 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet v0.13.12, macOS Sonoma 14.4 (23E5196e) [Darwin 23.4.0]
+Apple M1, 1 CPU, 8 logical and 8 physical cores
+.NET SDK 8.0.101
+  [Host]     : .NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT AdvSIMD
+  DefaultJob : .NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT AdvSIMD
+
+
+| Method    | ProvidedData | Mean     | Error   | StdDev  | Gen0      | Allocated |
+|---------- |------------- |---------:|--------:|--------:|----------:|----------:|
+| Calculate | brpgejkke    | 958.6 ms | 0.96 ms | 0.90 ms | 1000.0000 |  10.09 MB |
+
+// * Legends *
+  ProvidedData : Value of the 'ProvidedData' parameter
+  Mean         : Arithmetic mean of all measurements
+  Error        : Half of 99.9% confidence interval
+  StdDev       : Standard deviation of all measurements
+  Gen0         : GC Generation 0 collects per 1000 operations
+  Allocated    : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms         : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:24 (24.26 sec), executed benchmarks: 1
+
+Global total time: 00:00:27 (27.11 sec), executed benchmarks: 1
+// * Artifacts cleanup *
+Artifacts cleanup is finished
